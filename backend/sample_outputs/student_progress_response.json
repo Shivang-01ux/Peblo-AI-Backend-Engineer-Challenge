@@ -1,0 +1,9 @@
+{
+  "student_id": "student_01",
+  "current_difficulty": "medium",
+  "correct_streak": 0,
+  "wrong_streak": 0,
+  "total_answered": 5,
+  "total_correct": 3,
+  "accuracy": 60.0
+}

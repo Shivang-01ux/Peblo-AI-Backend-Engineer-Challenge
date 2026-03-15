@@ -1,0 +1,70 @@
+{
+  "questions_generated": 6,
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which of the following is an example of a proper noun?",
+      "type": "MCQ",
+      "options": ["dog", "London", "city", "river"],
+      "answer": "London",
+      "difficulty": "easy",
+      "source_chunk_id": 1,
+      "quality_score": null
+    },
+    {
+      "id": 2,
+      "question": "What type of word names people, places, things, or ideas?",
+      "type": "MCQ",
+      "options": ["Verb", "Adjective", "Noun", "Adverb"],
+      "answer": "Noun",
+      "difficulty": "easy",
+      "source_chunk_id": 1,
+      "quality_score": null
+    },
+    {
+      "id": 3,
+      "question": "Which of the following words is a verb?",
+      "type": "MCQ",
+      "options": ["beautiful", "run", "London", "happy"],
+      "answer": "run",
+      "difficulty": "medium",
+      "source_chunk_id": 2,
+      "quality_score": null
+    },
+    {
+      "id": 4,
+      "question": "Every sentence needs at least one noun to be complete.",
+      "type": "true_false",
+      "options": ["True", "False"],
+      "answer": "False",
+      "difficulty": "medium",
+      "source_chunk_id": 2,
+      "quality_score": null
+    },
+    {
+      "id": 5,
+      "question": "Proper nouns always start with a ______ letter.",
+      "type": "fill_in_the_blank",
+      "options": null,
+      "answer": "capital",
+      "difficulty": "easy",
+      "source_chunk_id": 1,
+      "quality_score": null
+    },
+    {
+      "id": 6,
+      "question": "What do common nouns refer to?",
+      "type": "MCQ",
+      "options": [
+        "Specific people and places",
+        "General names for people, places, or things",
+        "Only animals",
+        "Only cities"
+      ],
+      "answer": "General names for people, places, or things",
+      "difficulty": "easy",
+      "source_chunk_id": 1,
+      "quality_score": null
+    }
+  ]
+}

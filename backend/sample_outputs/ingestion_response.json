@@ -1,0 +1,24 @@
+{
+  "document_id": 1,
+  "title": "peblo_pdf_grade4_english_grammar",
+  "total_chunks": 8,
+  "chunks": [
+    {
+      "id": 1,
+      "source_id": 1,
+      "chunk_id": "SRC_1_CH_001",
+      "topic": "English",
+      "text": "Nouns are words that name people, places, things, or ideas. Common nouns are general names like 'dog' or 'city.' Proper nouns name specific things and always start with a capital letter, like 'London' or 'Sarah.'",
+      "created_at": "2026-03-15T10:30:00"
+    },
+    {
+      "id": 2,
+      "source_id": 1,
+      "chunk_id": "SRC_1_CH_002",
+      "topic": "English",
+      "text": "Verbs are action words. They tell us what someone or something does. For example, 'run', 'jump', and 'think' are all verbs. Every sentence needs at least one verb.",
+      "created_at": "2026-03-15T10:30:01"
+    }
+  ],
+  "message": "Document ingested successfully"
+}
