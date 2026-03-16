@@ -366,7 +366,7 @@ function QuizContent() {
             <span className="text-sm font-bold text-primary tracking-widest uppercase">
               Question {currentIndex + 1}
             </span>
-            <DifficultyMeter level={mapDifficulty(currentQuestion.difficulty)} />
+            <DifficultyMeter level={mapDifficulty(currentDifficulty)} />
           </div>
 
           <h2 className="text-2xl md:text-3xl font-bold leading-relaxed mb-10">

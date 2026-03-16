@@ -8,6 +8,7 @@ from content chunks via structured prompt engineering.
 import json
 import re
 import time
+import random
 from typing import Optional
 
 import openai
@@ -31,8 +32,9 @@ Text:
 Subject: {subject}
 Grade Level: {grade}
 Target Difficulty: {difficulty}
+Variation Focus: {focus_area}
 
-Generate exactly 6 questions:
+Generate exactly 6 highly unique questions:
 - 4 Multiple Choice Questions (MCQ) — each with exactly 4 options
 - 1 True/False Question
 - 1 Fill in the Blank Question
@@ -47,7 +49,8 @@ Return ONLY a valid JSON array. Each element must have these keys:
 Ensure:
 - Factual correctness based strictly on the provided text
 - Educational clarity and grade-appropriate language
-- Each question is unique and tests a different concept
+- Each question tests a entirely different concept from the text
+- Heavily emphasize the Variation Focus provided to make these questions distinct
 - For MCQ, make all 4 options plausible — avoid obviously wrong distractors
 
 Return ONLY the JSON array, no markdown, no explanation.
@@ -117,11 +120,21 @@ class QuizGenerationService:
         Returns:
             List of question dicts matching the quiz schema.
         """
+        focus_options = [
+            "deep conceptual understanding and underlying mechanisms",
+            "specific factual details and definitions",
+            "real-world applications and hypothetical scenarios",
+            "logical reasoning and drawing conclusions",
+            "comparing and contrasting core ideas",
+            "identifying true statements or finding the exception",
+        ]
+        
         prompt = QUIZ_PROMPT_TEMPLATE.format(
             text_chunk=text_chunk,
             subject=subject,
             grade=grade,
             difficulty=difficulty,
+            focus_area=random.choice(focus_options),
         )
 
         max_retries = 3
@@ -138,7 +151,7 @@ class QuizGenerationService:
                         },
                         {"role": "user", "content": prompt},
                     ],
-                    temperature=0.7,
+                    temperature=0.9,  # High temperature for maximum variety
                     max_tokens=2000,
                 )
 

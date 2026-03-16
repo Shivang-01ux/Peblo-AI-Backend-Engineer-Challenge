@@ -43,7 +43,7 @@ class Settings(BaseSettings):
     MAX_FILE_SIZE_MB: int = 50
 
     # ── Duplicate Detection ──────────────────────────────────────
-    SIMILARITY_THRESHOLD: float = 0.90
+    SIMILARITY_THRESHOLD: float = 0.95
 
     model_config = {"env_file": ".env", "env_file_encoding": "utf-8", "extra": "ignore"}
 
